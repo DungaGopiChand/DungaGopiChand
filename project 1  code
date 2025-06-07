@@ -1,0 +1,16 @@
+mood_responses = {
+    "happy": ("😊", "That's wonderful! Keep smiling!"),
+    "sad": ("😢", "It's okay to feel sad sometimes. Things will get better!"),
+    "angry": ("😠", "Take a deep breath. Calmness is power."),
+    "excited": ("🤩", "Yay! Ride that wave of excitement!"),
+    "bored": ("😐", "Why not try something new or creative?"),
+    "tired": ("😴", "Get some rest. You deserve it!")
+}
+
+user_mood = input("How are you feeling today? ").lower()
+
+if user_mood in mood_responses:
+    emoji, message = mood_responses[user_mood]
+    print(f"{emoji} {message}")
+else:
+    print("🤔 Hmm... I don't recognize that mood, but I hope you're doing okay!")
